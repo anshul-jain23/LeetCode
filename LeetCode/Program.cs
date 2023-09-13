@@ -20,6 +20,11 @@
                     IntSolutions._412_FizzBuzz(15).PrintLine();
                     break;
 
+                case 485:
+                    ArraySolutions._485_FindMaxConsecutiveOnes(new int[] { 1, 1, 0, 1, 1, 1 }).PrintLine();
+                    ArraySolutions._485_FindMaxConsecutiveOnes(new int[] { 1, 0, 1, 1, 0, 1 }).PrintLine();
+                    break;
+
                 case 876:
                     //Case 1: 6 Nodes
                     var head = LinkedListSolutions.GetNListNodes(6);
@@ -38,6 +43,11 @@
                     head.PrintList();
                     Console.WriteLine("middle Node is");
                     LinkedListSolutions._876_MiddleNode(head).PrintLine();
+                    break;
+
+                case 977:
+                    ArraySolutions._977_SortedSquares(new int[] { -4, -1, 0, 3, 10 }).PrintLine();
+                    ArraySolutions._977_SortedSquares(new int[] { -7, -3, 2, 3, 11 }).PrintLine();
                     break;
 
                 case 1342:

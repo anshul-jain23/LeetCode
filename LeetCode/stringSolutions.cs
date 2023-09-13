@@ -27,7 +27,7 @@
                 dictMagzine.Add(k, 1);
             }
 
-            //step2: for each letter in ransom na=ote, decrease the count in dict untill 0 detects
+            //step2: for each letter in ransom note, decrease the count in dict untill 0 detects
             foreach (var let in ransomNote)
             {
                 var k = let.ToString();
