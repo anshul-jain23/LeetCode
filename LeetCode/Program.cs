@@ -9,6 +9,26 @@
 
             switch (pgrmNum)
             {
+                case 26:
+                    ArraySolutions._26_RemoveDuplicates(new int[] { 1, 1, 1, 2 }).PrintLine();
+                    ArraySolutions._26_RemoveDuplicates(new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 }).PrintLine();
+
+                    break;
+                case 27:
+                    ArraySolutions._27_RemoveElement(new int[] { 3, 2, 2, 3 }, 3).PrintLine();
+                    break;
+                case 88:
+                    ArraySolutions._88_MergeSortedArray(new int[] { 2, 0 }, 1, new int[] { 1 }, 1).PrintLine();
+                    ArraySolutions._88_MergeSortedArray(new int[] { 1, 2, 3, 0, 0, 0 }, 3, new int[] { 2, 5, 6 }, 3).PrintLine();
+                    ArraySolutions._88_MergeSortedArray(new int[] { 1 }, 1, Array.Empty<int>(), 0).PrintLine();
+                    ArraySolutions._88_MergeSortedArray(new int[] { 0 }, 0, new int[] { 1 }, 1).PrintLine();
+                    break;
+
+                case 283:
+                    ArraySolutions._283_MoveZeroes(new int[] { 0, 1, 0, 3, 12 }).PrintLine();
+                    ArraySolutions._283_MoveZeroes(new int[] { 0 }).PrintLine();
+                    break;
+
                 case 383:
                     stringSolutions._383_RansomNote("aa", "aab").PrintLine();
                     stringSolutions._383_RansomNote("aab", "aa").PrintLine();
@@ -45,13 +65,46 @@
                     LinkedListSolutions._876_MiddleNode(head).PrintLine();
                     break;
 
+                case 905:
+                    ArraySolutions._905_SortArrayByParity(new int[] { 0, 1 }).PrintLine();
+                    ArraySolutions._905_SortArrayByParity(new int[] { 0, 1, 2}).PrintLine();
+                    break;
+
+                case 941:
+                    ArraySolutions._941_ValidMountainArray(new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }).PrintLine();
+                    ArraySolutions._941_ValidMountainArray(new int[] { 9, 5, 4, 2, 1 }).PrintLine();
+                    ArraySolutions._941_ValidMountainArray(new int[] { 0, 3, 2, 1 }).PrintLine();
+                    ArraySolutions._941_ValidMountainArray(new int[] { 0, 2, 3, 3, 5, 2, 1, 0 }).PrintLine();
+                    break;
+
                 case 977:
                     ArraySolutions._977_SortedSquares(new int[] { -4, -1, 0, 3, 10 }).PrintLine();
                     ArraySolutions._977_SortedSquares(new int[] { -7, -3, 2, 3, 11 }).PrintLine();
                     break;
 
+                case 1089:
+                    ArraySolutions._1089_DuplicateZeros(new int[] { 1, 0, 2, 3, 0, 4, 5, 0 }).PrintLine();
+                    break;
+
+                case 1295:
+                    ArraySolutions._1295_FindNumbers(new int[] { 12, 345, 2, 6, 7896 }).PrintLine();
+                    ArraySolutions._1295_FindNumbers(new int[] { 555, 901, 482, 1771 }).PrintLine();
+                    break;
+
+                case 1299:
+                    ArraySolutions._1299_ReplaceWithGreatestElement(new int[] { 17, 18, 5, 4, 6, 1 }).PrintLine();
+                    ArraySolutions._1299_ReplaceWithGreatestElement(new int[] { 400 }).PrintLine();
+                    break;
+
                 case 1342:
                     IntSolutions._1342_Steps_to_Reduce_Number_to_Zero(123).PrintLine();
+                    break;
+
+                case 1346:
+                    ArraySolutions._1346_CheckIfDoubleExist(new int[] { 10, 2, 2, 3 }).PrintLine();
+                    ArraySolutions._1346_CheckIfDoubleExist(new int[] { 10, 2, 5, 3 }).PrintLine();
+                    ArraySolutions._1346_CheckIfDoubleExist(new int[] { -2, 0, 10, -19, 4, 6, -8 }).PrintLine();
+                    ArraySolutions._1346_CheckIfDoubleExist(new int[] { 7, 1, 14, 11 }).PrintLine();
                     break;
 
                 case 1480:
