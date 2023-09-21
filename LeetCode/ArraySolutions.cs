@@ -309,10 +309,9 @@
         public static int[] _905_SortArrayByParity(int[] nums)
         {
             var firstPtr = 0;
-            var secPtr = 0;
             while (firstPtr < nums.Length)
             {
-                secPtr = firstPtr;
+                int secPtr = firstPtr;
                 while (secPtr < nums.Length && nums[secPtr] % 2 != 0)
                 {
                     //untill even number detected
@@ -331,5 +330,89 @@
             }
             return nums;
         }
+
+        /// <summary>
+        /// Time Complexity: O(N)
+        /// Space Complexity: O(k)
+        /// </summary> 
+        public static int _1051_HeightChecker(int[] heights)
+        {
+            int k = 0, count = 0, max = 0;
+            var arrCounter = new int[101]; // range: 1 to 100
+
+            for (int i = 0; i < heights.Length; i++)
+            {
+                arrCounter[heights[i]] += 1;
+                max = Math.Max(max, heights[i]);
+            }
+
+            for (int i = 0; i <= max; i++)
+            {
+                for (int j = 0; j < arrCounter[i]; j++)
+                {
+                    if (i != heights[k++])
+                        count++;
+                }
+            }
+
+            return count;
+        }
+
+        /// <summary>
+        /// Time Complexity: O(N)
+        /// Space Complexity: O(1)
+        /// </summary> 
+        public static int _414_ThirdMax(int[] nums)
+        {
+            var arrMax = new long[3] { Int64.MinValue, Int64.MinValue, Int64.MinValue };
+            foreach (var num in nums)
+            {
+                if (num == arrMax[0] || num == arrMax[1] || num == arrMax[2])
+                    continue;
+
+                long maxNum = num;
+                if (maxNum > arrMax[2])
+                {
+                    (maxNum, arrMax[2]) = (arrMax[2], maxNum);
+                }
+
+                if (maxNum > arrMax[1])
+                {
+                    (maxNum, arrMax[1]) = (arrMax[1], maxNum);
+                }
+
+                if (maxNum > arrMax[0])
+                {
+                    arrMax[0] = maxNum;
+                }
+            }
+
+            return (int)(arrMax[0] < int.MinValue ? arrMax[2] : arrMax[0]);
+        }
+
+        /// <summary>
+        /// Time Complexity: O(N)
+        /// Space Complexity: O(N)
+        /// </summary> 
+        public static IList<int> _448_FindDisappearedNumbers(int[] nums)
+        {
+            var arrCounter = new int[nums.Length + 1];
+
+            for (var i = 0; i < nums.Length; i++)
+            {
+                arrCounter[nums[i]] = 1;
+            }
+
+            var res = new List<int>();
+            for (int i = 1; i < arrCounter.Length; i++)
+            {
+                if (arrCounter[i] == 0)
+                {
+                    res.Add(i);
+                }
+            }
+            return res;
+        }
+
     }
 }

@@ -40,6 +40,19 @@
                     IntSolutions._412_FizzBuzz(15).PrintLine();
                     break;
 
+                case 414:
+                    ArraySolutions._414_ThirdMax(new int[] { 1, 2, -2147483648 }).PrintLine(-2147483648);
+                    ArraySolutions._414_ThirdMax(new int[] { 1, 2 }).PrintLine(2);
+                    ArraySolutions._414_ThirdMax(new int[] { -64, -100, 0, 1, 56 }).PrintLine(0);
+                    ArraySolutions._414_ThirdMax(new int[] { -64, -100 }).PrintLine(-64);
+                    ArraySolutions._414_ThirdMax(new int[] { 0, 1, 2, 3, 2, 1, 2 }).PrintLine(1);
+                    break;
+
+                case 448:
+                    ArraySolutions._448_FindDisappearedNumbers(new int[] { 4, 3, 2, 7, 8, 2, 3, 1 }).PrintLine(new int[] { 5, 6 });
+                    ArraySolutions._448_FindDisappearedNumbers(new int[] { 0 }).PrintLine(new int[] { 1 });
+                    break;
+
                 case 485:
                     ArraySolutions._485_FindMaxConsecutiveOnes(new int[] { 1, 1, 0, 1, 1, 1 }).PrintLine();
                     ArraySolutions._485_FindMaxConsecutiveOnes(new int[] { 1, 0, 1, 1, 0, 1 }).PrintLine();
@@ -67,7 +80,7 @@
 
                 case 905:
                     ArraySolutions._905_SortArrayByParity(new int[] { 0, 1 }).PrintLine();
-                    ArraySolutions._905_SortArrayByParity(new int[] { 0, 1, 2}).PrintLine();
+                    ArraySolutions._905_SortArrayByParity(new int[] { 0, 1, 2 }).PrintLine();
                     break;
 
                 case 941:
@@ -80,6 +93,12 @@
                 case 977:
                     ArraySolutions._977_SortedSquares(new int[] { -4, -1, 0, 3, 10 }).PrintLine();
                     ArraySolutions._977_SortedSquares(new int[] { -7, -3, 2, 3, 11 }).PrintLine();
+                    break;
+
+                case 1051:
+                    ArraySolutions._1051_HeightChecker(new int[] { 1, 1, 4, 2, 1, 3 }).PrintLine();
+                    ArraySolutions._1051_HeightChecker(new int[] { 5, 1, 2, 3, 4 }).PrintLine();
+                    ArraySolutions._1051_HeightChecker(new int[] { 1, 2, 3, 4, 5 }).PrintLine();
                     break;
 
                 case 1089:

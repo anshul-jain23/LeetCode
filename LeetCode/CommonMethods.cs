@@ -5,7 +5,7 @@
 
         public static void PrintLine(this bool value)
         {
-            Console.WriteLine(value ? "True": "False");
+            Console.WriteLine(value ? "True" : "False");
         }
 
         public static void Print(this int[] nums)
@@ -30,13 +30,26 @@
             Console.WriteLine();
         }
 
-        public static void Print(this int num)
-        {
-            Console.Write(num);
-        }
         public static void PrintLine(this int num)
         {
-            num.Print();
+            Console.WriteLine(num);
+        }
+        public static void PrintLine(this int num, int result)
+        {
+            Console.WriteLine($"Output: {num}");
+            Console.WriteLine($"Expected Output: {result}");
+            Console.WriteLine();
+        }
+
+        public static void PrintLine(this IList<int> result)
+        {
+            Console.WriteLine($"Output: {string.Join(" ", result)}");
+        }
+
+        public static void PrintLine(this IList<int> result, IList<int> expected)
+        {
+            Console.WriteLine($"Output: {string.Join(" ", result)}");
+            Console.WriteLine($"Expected Output: {string.Join(" ", expected)}");
             Console.WriteLine();
         }
 
